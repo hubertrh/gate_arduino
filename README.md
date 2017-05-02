@@ -1,2 +1,3 @@
 # gate_arduino
-Small gate controlled by rfid-arduino
+This is a code that will be loaded into arduino.
+With it small gate will open using the rfid reader controlled by arduino.
