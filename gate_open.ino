@@ -49,6 +49,8 @@ void loop()
     stan = false;
 
   digitalWrite(2, stan);
+  delay(21);
+  digitalWrite(2, stan);
   delay(1000);
 }
 
