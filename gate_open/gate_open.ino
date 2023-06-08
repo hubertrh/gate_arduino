@@ -3,7 +3,7 @@
 #include <MFRC522.h>  //rfid
 #include <MFRC522Extended.h>  //rfid
 
-#define czas_trwania 20
+#define time_open 20
 
 const byte UID1[] = {0xB5, 0x61, 0x2B, 0x77};
 
@@ -31,13 +31,13 @@ void loop()
         rfid.uid.uidByte[2] == UID1[2] &&
         rfid.uid.uidByte[3] == UID1[3])
     {
-      Serial.println("Poprawny");
+      Serial.println("Correct");
       stan = true;
-      czas = millis() + czas_trwania;
+      czas = millis() + time_open;
     }
     else
     {
-      Serial.println("Niepoprawny");
+      Serial.println("Incorrect");
       stan = false;
     }
     
